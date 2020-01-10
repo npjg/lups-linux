@@ -15,7 +15,7 @@ $install cups hplip
 # (http://willem.engen.nl/projects/cupssmb/smbc)
 echo "[lups-linux] creating smbclient backend"
 smbc_backend="/usr/lib/cups/backend/smbc"
-sudo tee $smbc_backend > /dev/null <<EOF
+sudo tee $smbc_backend > /dev/null <<'EOF'
 #!/bin/sh
 
 if [ "$1" = "" ]; then
